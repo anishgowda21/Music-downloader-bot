@@ -1,0 +1,26 @@
+{
+    "name" : "Music downloader bot",
+    "description" : "A telegram bot that can send you high-quality audio ",
+    "repository" : "https://github.com/anishgowda21/Music-downloader-bot",
+    "keywords" : ["music" , "telegram" , "telegram bot", "python","jiosaavn"],
+    "env" : {
+        "TOKEN" : {
+            "description" : "Enter your telegram bot token",
+            "value" : ""
+        },
+        "APP_NAME" : {
+            "description" : "Enter your heroku app name",
+            "value" : ""
+        },
+        "API_APP_URL" :{
+            "description" : "Enter your api url note please include '/' at the end",
+            "value" : ""
+        }
+    },
+    "buildpacks": [{
+        "url" : "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },{
+        "url" : "heroku/python"
+    }
+]
+}
