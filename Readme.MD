@@ -4,7 +4,7 @@
 
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+![Logo](https://github.com/anishgowda21/Music-downloader-bot/raw/main/images/botimage.jpg)
 
 Still under development Please Report issues to improve this repo.I will try to fix bugs in next update
 
