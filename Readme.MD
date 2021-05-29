@@ -1,6 +1,6 @@
 # Music downloader bot
 
-[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)  [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fanishgowda21%2FMusic-downloader-bot&count_bg=%239A27D4&title_bg=%23555555&icon=applemusic.svg&icon_color=%23E7E7E7&title=Views&edge_flat=false)](https://hits.seeyoufarm.com)  [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fanishgowda21%2FMusic-downloader-bot&count_bg=%239A27D4&title_bg=%23555555&icon=applemusic.svg&icon_color=%23E7E7E7&title=Views&edge_flat=false)](https://hits.seeyoufarm.com) [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
 ![Logo](https://github.com/anishgowda21/Music-downloader-bot/raw/main/images/botimage.jpg)
 
@@ -39,7 +39,7 @@ You Can Deploy your API on heroku or your VPS
 
 ## Environment Variables
 
-To run this project, you will need to add the following environment variables to your .env file
+To run this project, you will need to add the following environment variables
 
 `Telegram bot API token`
 
