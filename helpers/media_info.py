@@ -9,7 +9,7 @@ import traceback
 api = os.getenv("API_APP_URL")
 
 
-def send_song(update, context, query, msg, id):
+def send_song(update, context, query, msg):
     surl = api+"song/?query="+query+"&lyrics=true"
     try:
         context.user_data['downloading'] = True
@@ -42,7 +42,7 @@ def send_song(update, context, query, msg, id):
         logger.error(traceback.format_exc())
 
 
-def send_album(update, context, query, msg, id):
+def send_album(update, context, query, msg):
     aurl = api+"album/?query="+query+"&lyrics=true"
     try:
         context.user_data['downloading'] = True
@@ -67,7 +67,7 @@ def send_album(update, context, query, msg, id):
         logger.error(traceback.format_exc())
 
 
-def send_playlist(update, context, query, msg, id):
+def send_playlist(update, context, query, msg):
     purl = api+"playlist/?query="+query+"&lyrics=true"
     try:
         context.user_data['downloading'] = True

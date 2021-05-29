@@ -23,12 +23,15 @@ def help(update, context):
 
 def list(update, context):
     files = os.listdir("/app/telegramMusic")
-    string = ""
+    string = None
     for l in files:
         if l.endswith(".mp3"):
             s = "<b>"+l+"</b>"+"\n"
             string = string+s
-    update.message.reply_html(string)
+    if string:
+        update.message.reply_html(string)
+    else:
+        update.message.reply_html("No songs are currently present")
 
 
 def contact(update, context: CallbackContext):
@@ -50,15 +53,15 @@ def download(update, context: CallbackContext):
         if not context.user_data.get('downloading', False):
             if "/song/" in query:
                 msg = update.message.reply_text("Getting song info 🔎🔎")
-                send_song(update, context, query, msg, id)
+                send_song(update, context, query, msg)
 
             elif "/album" in query:
                 msg = update.message.reply_text("Getting album info 🔎🔎")
-                send_album(update, context, query, msg, id)
+                send_album(update, context, query, msg)
 
             elif "/playlist/" or "/featured/" in query:
                 msg = update.message.reply_text("Getting playlist info 🔎🔎")
-                send_playlist(update, context, query, msg, id)
+                send_playlist(update, context, query, msg)
             else:
                 wrong_link(update)
         else:
