@@ -4,7 +4,7 @@
     "repository" : "https://github.com/anishgowda21/Music-downloader-bot",
     "keywords" : ["music" , "telegram" , "telegram bot", "python","jiosaavn"],
     "env" : {
-        "TOKEN" : {
+        "BOT_TOKEN" : {
             "description" : "Enter your telegram bot token",
             "value" : ""
         },
