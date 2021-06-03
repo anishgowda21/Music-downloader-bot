@@ -3,9 +3,9 @@ from telegram.utils.helpers import escape_markdown as es
 from helpers.caption import caption_maker
 
 
-def send_media(media_binary, album, title, artist, duration, thumb_binary, msg, update):
+def send_media(media_binary, album, title, artist, duration, thumb_binary, msg, update, language):
     msg.edit_text("Sending the song ⚡️⚡")
-    caption = caption_maker(title, album, artist)
+    caption = caption_maker(title, album, artist, language)
     update.message.reply_audio(audio=media_binary, thumb=thumb_binary,
                                title=title, performer=artist, duration=duration, caption=caption, parse_mode="MarkdownV2")
     msg.delete()

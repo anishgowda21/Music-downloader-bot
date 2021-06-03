@@ -49,6 +49,11 @@ def send(song_data, update):
         else:
             cover_image = open("images/botimage.jpg")
 
+        if song_data['language']:
+            language = song_data['language']
+        else:
+            language = "Unknown"
+
         filename = dest+song_name+".mp3"
         msg = send_status(update, song_name)
         # Check if song is present in the server
@@ -72,7 +77,7 @@ def send(song_data, update):
                 logger.info(f"Sending {filename}")
                 # Send the song
                 send_media(open(filename, 'rb'), album, song_name, artist, duration,
-                           cover_image, msg, update)
+                           cover_image, msg, update, language)
             else:
                 msg.edit_text("Can't send the song")
     except Exception as e:
