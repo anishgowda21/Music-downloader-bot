@@ -61,7 +61,7 @@ def send(song_data, update):
             # If the Song is present send the song directly no need to download it agaian
             logger.info(f"Sending {filename}")
             send_media(open(filename, 'rb'), album, song_name, artist, duration,
-                       cover_image, msg, update)
+                       cover_image, msg, update, language)
 
         else:
             # If the song is not present in the server download the song and convert it
