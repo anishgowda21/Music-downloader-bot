@@ -21,7 +21,7 @@ Music downloader bot is a telegram bot that can send you high-quality audio 🎧
 This project entirely depends on [Sumanjay's](https://github.com/cyberboysumanjay)
 [Unofficial jiosaavn api](https://github.com/cyberboysumanjay/JioSaavnAPI).
 
-So if You need to deply this preoject you first have to deply your own JioSaavnAPI
+So if You need to deply this project you first have to deply your own JioSaavnAPI
 
 You Can Deploy your API on heroku or your VPS
 

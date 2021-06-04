@@ -23,7 +23,7 @@ def help(update, context):
 
 def list(update, context):
     files = os.listdir("/app/telegramMusic")
-    string = " "
+    string = ""
     for l in files:
         if l.endswith(".mp3"):
             s = "<b>"+l+"</b>"+"\n"

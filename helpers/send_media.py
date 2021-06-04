@@ -47,7 +47,7 @@ def send(song_data, update):
         if song_data['image']:
             cover_image = requests.get(song_data['image'], stream=True).content
         else:
-            cover_image = open("images/botimage.jpg")
+            cover_image = open("images/botimage.jpg", "rb")
 
         if song_data['language']:
             language = song_data['language']
