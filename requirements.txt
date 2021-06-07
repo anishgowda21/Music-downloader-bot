@@ -2,4 +2,4 @@ youtube-dl
 mutagen
 requests
 python-telegram-bot
-pymongo[srv]
+
